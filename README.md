@@ -1,4 +1,4 @@
 # Test
 ![Иллюстрация к проекту](
-        Test/Test/img/test_template.png
+      https://github.com/alampiler/Test/blob/master/Test/img/test_template.png
       )
