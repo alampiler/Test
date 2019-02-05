@@ -1,0 +1,145 @@
+
+
+a{text-decoration: none}
+
+ul{
+	list-style: none;
+}
+
+.menu {
+	background: #222129;
+	padding: 0;
+	height: 1024px;
+	background-image: url(../img/bg.png);
+	background-position: center;
+ 	background-repeat: no-repeat;
+
+}
+
+.menu .menu_head{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 94%;
+	margin: 0 auto 240px auto;
+	padding-top: 50px;
+}
+
+.menu .menu_head .logo{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.menu .menu_head .logo img{
+	width: 50px;
+	height: 50px;
+}
+
+.menu .menu_head .logo span{
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	margin-left: 29px;
+}
+
+
+.menu .menu_head .close {
+  width: 14px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.menu .menu_head .close:before,
+.menu .menu_head .close:after {
+  position: absolute;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #fff;
+}
+
+.menu .menu_head .close:before {transform: rotate(45deg)}
+
+.menu .menu_head .close:after {transform: rotate(-45deg)}
+
+
+.menu .menu_content .menu_list{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+
+}
+
+.menu .menu_content .menu_list .menu_elem{
+	display: flex;
+	flex-flow: column wrap;
+	width: 22%;
+	margin-bottom: 100px;
+	margin-right: 3%;
+}
+
+
+.menu .menu_content .menu_list .menu_elem a{color: #fff}
+
+.menu .menu_content .menu_list .menu_elem .menu_info{
+	margin-top: 10px;
+	color: #D1D1D1;
+}
+
+
+@media screen and (max-width: 1320px){
+
+	.menu .menu_content .menu_list .menu_elem{
+	width: 30%;
+	margin-right: 3%;
+	}
+
+}
+
+@media screen and (max-width: 1024px){
+
+	.menu .menu_content .menu_list .menu_elem{
+	width: 30%;
+	margin-right: 20%;
+	}
+
+	.menu .menu_content .menu_list .menu_elem:nth-last-child(-n+2){margin-bottom: 0}
+
+	.menu .menu_content .menu_list .menu_elem a{font-size: 40px}
+
+	.menu_content .menu_list .menu_elem .menu_info{font-size: 13px}
+}
+
+@media screen and (max-width: 840px){
+
+	.menu .menu_head{margin: 0 auto 160px auto}
+}
+
+@media screen and (max-width: 640px){
+
+ul{
+	padding: 0;
+}
+
+	.menu {
+	background: #222129;
+	padding: 0;
+	height: 100%;
+	background-image: url(../img/bg.png);
+	background-position: center;
+ 	background-repeat: repeat-y;
+
+}
+
+.menu .menu_content .menu_list .menu_elem{
+	display: flex;
+	flex-flow: column wrap;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 100px;
+	margin-right: 0;
+}
+.menu .menu_content .menu_list .menu_elem:nth-last-child(-n+2){margin-bottom: 100px}
+}

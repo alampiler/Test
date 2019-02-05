@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+
+@font-face{
+	font-family: Manrope;
+  	src: url("manrope-medium.woff2") format("woff2"),
+  	url("manrope-medium.woff") format("woff"),
+  	url("manrope-medium.otf") format("truetype");
+  	font-style: normal;
+  	font-weight: 500;
+}
+
+@font-face{
+	font-family: Gotham;
+  	src: url("GothamProRegular.eot"),
+  	url("GothamProRegular.ttf") format("truetype"),
+  	url("GothamProRegular.woff") format("woff");
+  	font-style: normal;
+  	font-weight: 500;
+}
+
+a{
+	font: bold normal 45px/normal 'Philosopher', sans-serif;
+}
+
+.menu_content .menu_list .menu_elem .menu_info{
+	font: normal normal 14px/28px 'Manrope', sans-serif;
+	letter-spacing: 0.1em;
+}
+
+
+.menu .menu_head .logo span{
+	font: bold normal 15px/normal 'Gotham', sans-serif;
+	letter-spacing: 0.2em;
+}
